@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07152f">
+<meta name="description" content="Trung Tâm Đào Tạo Bóng Bàn Đà Nẵng – Học bóng bàn cùng Thầy Vũ. Đào tạo từ cơ bản đến nâng cao, rèn luyện kỹ thuật và bản lĩnh thi đấu.">
+<title>Trung Tâm Đào Tạo Bóng Bàn Đà Nẵng | Học cùng Thầy Vũ</title>
+<style>
+:root{--navy:#07152f;--navy2:#10264b;--red:#ed2445;--ice:#f3f6fb;--ink:#17233a;--muted:#64718a;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1140px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,21,47,.96);backdrop-filter:blur(12px);color:white;border-bottom:1px solid #ffffff1c}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.2px;line-height:1.2}.logo{width:43px;height:43px;border-radius:13px;background:var(--red);display:grid;place-items:center;font-size:23px;box-shadow:0 8px 22px #ed244544}.brand small{display:block;font-size:10px;letter-spacing:1.5px;color:#aebbd2;font-weight:650;margin-top:4px}.navlinks{display:flex;align-items:center;gap:25px;font-size:13px;color:#d5deee}.navlinks a:hover{color:#fff}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s}.nav-cta,.btn-red{background:var(--red);color:white;box-shadow:0 9px 24px #ed244533}.nav-cta:hover,.btn-red:hover{transform:translateY(-2px);background:#ff3455}.btn-dark{background:#0c1c39;color:#fff}.btn-light{background:#fff;color:var(--navy)}.menu{display:none;background:none;border:1px solid #ffffff44;color:#fff;border-radius:10px;padding:8px 12px;font-size:20px}
+.hero{background:radial-gradient(ellipse at 78% 22%,#1e3c68 0,transparent 38%),linear-gradient(125deg,#07152f 0%,#0c2144 65%,#122b50 100%);color:white;overflow:hidden;position:relative;padding:86px 0 78px}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff12;border-radius:50%;right:-140px;bottom:-260px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff05}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:850;color:#ff8da0}.eyebrow:before{content:"";width:25px;height:2px;background:var(--red)}h1{font-size:clamp(38px,5.2vw,66px);line-height:1.04;letter-spacing:-2.4px;margin:20px 0}.hero h1 span{color:#ff405d}.hero p{max-width:520px;color:#c5d0e2;font-size:16px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-note{display:flex;gap:18px;flex-wrap:wrap;margin-top:32px;color:#c3cfe1;font-size:12px}.hero-note b{color:white}.hero-photo{position:relative}.hero-photo img{width:100%;height:410px;object-fit:cover;border-radius:22px;border:1px solid #ffffff35;box-shadow:0 28px 65px #0007}.photo-tag{position:absolute;left:-20px;bottom:22px;background:white;color:var(--navy);border-radius:15px;padding:13px 18px;box-shadow:0 14px 35px #0004;font-size:12px;font-weight:800}.photo-tag strong{display:block;font-size:18px;color:var(--red)}
+.stats{background:#fff;position:relative;margin-top:-1px}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:26px 0;border-bottom:1px solid #e8edf4}.stat{text-align:center;border-right:1px solid #e8edf4}.stat:last-child{border:0}.stat strong{font-size:25px;color:var(--navy);display:block}.stat span{font-size:12px;color:var(--muted)}
+section{padding:82px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.kicker{color:var(--red);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(28px,3.7vw,42px);line-height:1.15;letter-spacing:-1.2px;color:var(--navy);margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}
+.about{background:var(--ice)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-image{position:relative}.about-image img{height:390px;width:100%;object-fit:cover;border-radius:20px}.about-badge{position:absolute;right:-18px;bottom:20px;background:var(--red);color:white;padding:17px 20px;border-radius:15px;font-weight:850;max-width:170px;font-size:13px;box-shadow:0 12px 30px #ed244544}.about-copy h2{font-size:37px;line-height:1.15;color:var(--navy);letter-spacing:-1px;margin:12px 0}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:23px 0}.check{font-size:13px;font-weight:750;display:flex;gap:9px;align-items:flex-start}.check i{font-style:normal;background:#ffe4e9;color:var(--red);width:22px;height:22px;flex:none;border-radius:50%;display:grid;place-items:center}
+.programs{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e8edf4;border-radius:18px;padding:26px;background:white;box-shadow:0 10px 30px #10264b08}.card-icon{width:47px;height:47px;border-radius:14px;background:#fff0f2;color:var(--red);display:grid;place-items:center;font-size:23px}.card h3{color:var(--navy);margin:18px 0 8px;font-size:18px}.card p{color:var(--muted);font-size:13px;margin:0}.card .more{display:inline-block;margin-top:18px;color:var(--red);font-size:12px;font-weight:850}
+.gallery{background:var(--navy);color:white}.gallery .section-head h2{color:white}.gallery .section-head p{color:#aebbd2}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:220px 220px;gap:14px}.gallery-grid figure{margin:0;overflow:hidden;border-radius:15px;position:relative}.gallery-grid figure:first-child{grid-row:span 2}.gallery-grid figure:last-child{grid-column:2 / 4}.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.gallery-grid figure:hover img{transform:scale(1.05)}.gallery-grid figure:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#07152fbb)}
+.achievements{background:var(--ice)}.achievement-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.achievement-grid img{height:340px;width:100%;object-fit:cover;border-radius:18px}.achievement-grid h2{color:var(--navy);font-size:35px;line-height:1.15;margin:10px 0}.achievement-grid p{color:var(--muted)}.achievement-points{display:grid;gap:12px;margin-top:20px}.achievement-points div{background:white;border-radius:12px;padding:13px 16px;font-size:13px;font-weight:750}.achievement-points span{color:var(--red);margin-right:8px}
+.cta{padding:0 0 82px;background:var(--ice)}.cta-panel{background:linear-gradient(110deg,#ed2445,#c91535);border-radius:22px;padding:38px 45px;color:white;display:flex;align-items:center;justify-content:space-between;gap:24px}.cta-panel h2{font-size:30px;line-height:1.15;margin:0 0 8px}.cta-panel p{margin:0;color:#ffe2e7;font-size:14px}
+.faq{background:white}.faq-wrap{max-width:800px;margin:auto}.faq-item{border-bottom:1px solid #e7ebf1}.faq-item summary{cursor:pointer;list-style:none;padding:19px 4px;font-weight:800;color:var(--navy);display:flex;justify-content:space-between;gap:15px}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"+";color:var(--red);font-size:22px}.faq-item[open] summary:after{content:"−"}.faq-item p{color:var(--muted);font-size:14px;margin:0;padding:0 4px 19px}
+.contact{background:var(--ice)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}.contact-info{background:var(--navy);color:white;border-radius:20px;padding:30px}.contact-info h3{font-size:25px;margin:0 0 10px}.contact-info p{color:#bac7da;font-size:14px}.contact-line{border-top:1px solid #ffffff22;padding:16px 0;display:flex;gap:12px;font-size:14px}.contact-line b{display:block;color:#ff8da0;font-size:10px;letter-spacing:1px;text-transform:uppercase}.form{background:white;border-radius:20px;padding:30px;box-shadow:0 12px 35px #10264b0c}.form h3{margin:0 0 6px;color:var(--navy);font-size:23px}.form>p{color:var(--muted);font-size:13px;margin:0 0 20px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#3b4960}.field input,.field select,.field textarea{width:100%;border:1px solid #dce3ed;border-radius:10px;padding:12px 13px;font:inherit;font-size:13px;outline:none;background:#fbfcfe}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red)}.field textarea{min-height:85px;resize:vertical}.form button{margin-top:17px;width:100%}.form-note{font-size:11px;color:#8792a4;margin-top:10px}
+footer{background:#050f23;color:#aab7cc;padding:35px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-brand{color:white;font-weight:850}.footer-row small{font-size:11px}
+.float-call{position:fixed;right:20px;bottom:20px;z-index:30;background:var(--red);color:white;border-radius:999px;padding:13px 18px;font-weight:850;font-size:13px;box-shadow:0 10px 30px #ed244566}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:var(--navy);padding:20px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.nav-cta{display:none}.menu{display:block}.hero{padding:60px 0}.hero-grid,.about-grid,.achievement-grid,.contact-grid{grid-template-columns:1fr}.hero-photo{max-width:650px}.about-image{order:2}.cards{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-rows:180px 180px}.cta-panel{align-items:flex-start;flex-direction:column}.achievement-grid img{height:300px}}
+@media(max-width:560px){.container{width:min(100% - 30px,1140px)}.brand{font-size:12px}.logo{width:38px;height:38px}.hero{padding:48px 0 55px}.hero h1{font-size:42px;letter-spacing:-1.8px}.hero p{font-size:14px}.hero-photo img{height:270px}.photo-tag{left:10px}.stats-grid{padding:20px 0}.stat strong{font-size:21px}.stat span{font-size:10px}section{padding:62px 0}.section-head{margin-bottom:30px}.about-copy h2,.achievement-grid h2{font-size:30px}.about-image img{height:280px}.about-badge{right:8px}.checks{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 140px 140px}.gallery-grid figure:first-child{grid-row:auto;grid-column:1/-1}.gallery-grid figure:last-child{grid-column:auto}.cta{padding-bottom:62px}.cta-panel{padding:27px 24px}.cta-panel h2{font-size:25px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-info,.form{padding:23px}.footer-row{align-items:flex-start;flex-direction:column}.float-call{right:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#top"><span class="logo">🏓</span><span>TRUNG TÂM ĐÀO TẠO BÓNG BÀN<small>ĐÀ NẴNG · HỌC CÙNG THẦY VŨ</small></span></a>
+  <nav class="navlinks" id="navlinks"><a href="#gioi-thieu">Giới thiệu</a><a href="#chuong-trinh">Chương trình học</a><a href="#hinh-anh">Hình ảnh</a><a href="#thanh-tich">Thành tích</a><a href="#faq">Hỏi đáp</a><a href="#lien-he">Liên hệ</a></nav>
+  <a class="nav-cta" href="tel:0931336897">☎ 0931 336 897</a>
+  <button class="menu" aria-label="Mở menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+ </div>
+</header>
+<main id="top">
+ <section class="hero">
+  <div class="container hero-grid">
+   <div><div class="eyebrow">Đam mê · Kỷ luật · Bứt phá</div>
+    <h1>CHINH PHỤC<br>ĐAM MÊ BÓNG BÀN<br><span>CÙNG THẦY VŨ.</span></h1>
+    <p>Môi trường tập luyện thân thiện, bài bản dành cho các bạn yêu thích bóng bàn tại Đà Nẵng. Từ những kỹ thuật đầu tiên đến nâng cao khả năng thi đấu.</p>
+    <div class="hero-actions"><a class="btn btn-red" href="#lien-he">ĐĂNG KÝ HỌC NGAY ↗</a><a class="btn btn-light" href="tel:0931336897">☎ Gọi Thầy Vũ</a></div>
+    <div class="hero-note"><span>✓ <b>Hướng dẫn tận tình</b></span><span>✓ <b>Nhiều cấp độ</b></span><span>✓ <b>Rèn luyện tự tin</b></span></div>
+   </div>
+   <div class="hero-photo"><img src="images/khong-khi-san-tap.jpeg" alt="Không khí tập luyện bóng bàn tại trung tâm"><div class="photo-tag"><strong>HỌC BÓNG BÀN</strong>Cùng Thầy Vũ tại Đà Nẵng</div></div>
+  </div>
+ </section>
+ <div class="stats"><div class="container stats-grid"><div class="stat"><strong>01–01</strong><span>Đào tạo từ cơ bản đến nâng cao</span></div><div class="stat"><strong>100%</strong><span>Chú trọng kỹ thuật nền tảng</span></div><div class="stat"><strong>🏓</strong><span>Học tập trong môi trường tích cực</span></div></div></div>
+ <section class="about" id="gioi-thieu"><div class="container about-grid">
+  <div class="about-image"><img src="images/tap-luyen-ca-nhan.jpeg" alt="Học viên tập luyện cùng huấn luyện viên"><div class="about-badge">Mỗi buổi tập<br>là một bước tiến!</div></div>
+  <div class="about-copy"><div class="kicker">Về chúng tôi</div><h2>Phát triển kỹ năng, nuôi dưỡng đam mê</h2><p>Trung Tâm Đào Tạo Bóng Bàn Đà Nẵng là nơi các học viên được làm quen, rèn luyện và nâng cao kỹ năng bóng bàn trong không khí vui vẻ, kỷ luật và đoàn kết.</p><p>Với sự hướng dẫn của Thầy Vũ, học viên từng bước hoàn thiện kỹ thuật, phát triển thể lực, tư duy chiến thuật và tinh thần thể thao.</p>
+   <div class="checks"><div class="check"><i>✓</i> Hướng dẫn theo trình độ</div><div class="check"><i>✓</i> Rèn kỹ thuật chuẩn</div><div class="check"><i>✓</i> Tăng phản xạ, di chuyển</div><div class="check"><i>✓</i> Giao lưu và thi đấu</div></div><a class="btn btn-red" href="#lien-he">TÌM HIỂU LỚP HỌC ↗</a>
+  </div>
+ </div></section>
+ <section class="programs" id="chuong-trinh"><div class="container"><div class="section-head"><div class="kicker">Chương trình đào tạo</div><h2>Lộ trình phù hợp với từng học viên</h2><p>Dù bạn mới bắt đầu hay đã có nền tảng, việc tập luyện đều đặn sẽ giúp bạn tiến bộ từng ngày.</p></div>
+  <div class="cards">
+   <article class="card"><div class="card-icon">🏓</div><h3>Làm quen bóng bàn</h3><p>Dành cho người mới bắt đầu: làm quen bàn, vợt, bóng, cách cầm vợt, tư thế chuẩn bị và luật chơi cơ bản.</p><a class="more" href="#lien-he">Tìm hiểu lớp học →</a></article>
+   <article class="card"><div class="card-icon">🎯</div><h3>Nâng cao kỹ thuật</h3><p>Luyện giao bóng, đỡ giao bóng, giật bóng, cắt bóng, điều bóng và phối hợp di chuyển trong thi đấu.</p><a class="more" href="#lien-he">Tìm hiểu lớp học →</a></article>
+   <article class="card"><div class="card-icon">🏆</div><h3>Rèn luyện thi đấu</h3><p>Phát triển tư duy chiến thuật, tâm lý thi đấu, khả năng xử lý tình huống và tinh thần fair-play.</p><a class="more" href="#lien-he">Tìm hiểu lớp học →</a></article>
+  </div>
+ </div></section>
+ <section class="gallery" id="hinh-anh"><div class="container"><div class="section-head"><div class="kicker">Khoảnh khắc tại trung tâm</div><h2>Mỗi ngày một bước tiến</h2><p>Hình ảnh tập luyện, giao lưu và những kỷ niệm đáng nhớ của các học viên.</p></div>
+  <div class="gallery-grid">
+   <figure><img src="images/khong-khi-san-tap.jpeg" alt="Các học viên luyện tập trong sân bóng bàn"></figure>
+   <figure><img src="images/tap-luyen-ca-nhan.jpeg" alt="Học viên thực hành bóng bàn"></figure>
+   <figure><img src="images/huan-luyen-ky-thuat.jpeg" alt="Buổi tập kỹ thuật bóng bàn"></figure>
+   <figure><img src="images/sinh-hoat-doan-vien.jpeg" alt="Các học viên sinh hoạt cùng nhau"></figure>
+   <figure><img src="images/thanh-tich-thi-dau.jpeg" alt="Học viên nhận giải tại giải bóng bàn"></figure>
+  </div>
+ </div></section>
+ <section class="achievements" id="thanh-tich"><div class="container achievement-grid">
+  <img src="images/thanh-tich-thi-dau.jpeg" alt="Hình ảnh học viên và thầy cô tại lễ trao giải bóng bàn">
+  <div><div class="kicker">Nỗ lực được ghi nhận</div><h2>Tự tin thi đấu – Trưởng thành qua từng giải đấu</h2><p>Không chỉ học kỹ thuật, học viên còn có cơ hội giao lưu, cọ xát và tích lũy kinh nghiệm thông qua các hoạt động, giải đấu phù hợp.</p><div class="achievement-points"><div><span>★</span> Khuyến khích tinh thần nỗ lực và fair-play</div><div><span>★</span> Tạo cơ hội giao lưu, học hỏi</div><div><span>★</span> Ghi nhận sự tiến bộ của từng học viên</div></div></div>
+ </div></section>
+ <section class="cta"><div class="container"><div class="cta-panel"><div><h2>Bắt đầu hành trình bóng bàn của bạn!</h2><p>Liên hệ Thầy Vũ để được tư vấn lớp học phù hợp.</p></div><a class="btn btn-light" href="tel:0931336897">GỌI 0931 336 897 ↗</a></div></div></section>
+ <section class="faq" id="faq"><div class="container"><div class="section-head"><div class="kicker">Giải đáp thắc mắc</div><h2>Câu hỏi thường gặp</h2><p>Một vài thông tin dành cho học viên và phụ huynh trước khi đăng ký.</p></div>
+  <div class="faq-wrap">
+   <details class="faq-item"><summary>Chưa biết chơi bóng bàn có thể đăng ký học không?</summary><p>Hoàn toàn được. Lớp học có thể bắt đầu từ những kỹ năng cơ bản như cách cầm vợt, tư thế đứng và cảm giác bóng.</p></details>
+   <details class="faq-item"><summary>Trung tâm có nhận học viên ở nhiều độ tuổi không?</summary><p>Bạn hãy liên hệ Thầy Vũ để trao đổi độ tuổi, mục tiêu và sắp xếp lớp phù hợp.</p></details>
+   <details class="faq-item"><summary>Cần chuẩn bị dụng cụ gì khi đến học?</summary><p>Hãy liên hệ trước để được hướng dẫn về vợt, trang phục và những vật dụng cần thiết cho buổi tập đầu tiên.</p></details>
+   <details class="faq-item"><summary>Làm thế nào để biết lịch học và học phí?</summary><p>Gọi hoặc nhắn tin trực tiếp số 0931 336 897 để nhận thông tin lịch học, học phí và tư vấn cụ thể.</p></details>
+  </div>
+ </div></section>
+ <section class="contact" id="lien-he"><div class="container"><div class="section-head"><div class="kicker">Kết nối với chúng tôi</div><h2>Đăng ký học bóng bàn</h2><p>Để lại thông tin, trung tâm sẽ liên hệ tư vấn cho bạn.</p></div>
+  <div class="contact-grid">
+   <div class="contact-info"><h3>Học bóng bàn cùng Thầy Vũ</h3><p>Cùng xây dựng nền tảng kỹ thuật vững chắc và nuôi dưỡng niềm yêu thích thể thao.</p>
+    <div class="contact-line"><span>☎</span><div><b>Điện thoại</b><a href="tel:0931336897">0931 336 897</a></div></div>
+    <div class="contact-line"><span>🏓</span><div><b>Đơn vị</b>Trung Tâm Đào Tạo Bóng Bàn Đà Nẵng</div></div>
+    <div class="contact-line"><span>👨‍🏫</span><div><b>Huấn luyện</b>Thầy Vũ</div></div>
+    <a class="btn btn-red" style="width:100%;margin-top:12px" href="https://zalo.me/0931336897" target="_blank" rel="noopener">NHẮN TIN ZALO ↗</a>
+   </div>
+   <form class="form" id="registerForm"><h3>Thông tin đăng ký</h3><p>Điền thông tin để gửi yêu cầu tư vấn qua Zalo.</p>
+    <div class="fields">
+     <div class="field"><label for="name">Họ và tên *</label><input id="name" name="name" required placeholder="Nhập họ tên"></div>
+     <div class="field"><label for="phone">Số điện thoại *</label><input id="phone" name="phone" required inputmode="tel" placeholder="Số điện thoại"></div>
+     <div class="field"><label for="age">Độ tuổi học viên</label><input id="age" name="age" placeholder="Ví dụ: 12 tuổi"></div>
+     <div class="field"><label for="level">Trình độ hiện tại</label><select id="level" name="level"><option>Mới bắt đầu</option><option>Đã biết cơ bản</option><option>Muốn nâng cao</option><option>Định hướng thi đấu</option></select></div>
+     <div class="field full"><label for="message">Nội dung cần tư vấn</label><textarea id="message" name="message" placeholder="Bạn muốn tìm hiểu điều gì?"></textarea></div>
+    </div>
+    <button class="btn btn-red" type="submit">GỬI ĐĂNG KÝ QUA ZALO ↗</button><div class="form-note">Nút gửi sẽ mở Zalo với nội dung đăng ký đã điền để bạn gửi cho Thầy Vũ.</div>
+   </form>
+  </div>
+ </div></section>
+</main>
+<footer><div class="container footer-row"><div><div class="footer-brand">🏓 TRUNG TÂM ĐÀO TẠO BÓNG BÀN ĐÀ NẴNG</div><small>Học bóng bàn cùng Thầy Vũ · Đam mê tạo nên khác biệt</small></div><small>Liên hệ: <a href="tel:0931336897" style="color:white">0931 336 897</a></small></div></footer>
+<a class="float-call" href="tel:0931336897">☎ Gọi Thầy Vũ</a>
+<script>
+document.getElementById('registerForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const d=new FormData(this);
+ const msg=`ĐĂNG KÝ HỌC BÓNG BÀN\nHọ tên: ${d.get('name')}\nSĐT: ${d.get('phone')}\nĐộ tuổi: ${d.get('age')||'Chưa cung cấp'}\nTrình độ: ${d.get('level')}\nNội dung: ${d.get('message')||'Cần tư vấn thêm'}`;
+ window.open('https://zalo.me/0931336897?text='+encodeURIComponent(msg),'_blank');
+});
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+</script>
+</body></html>
